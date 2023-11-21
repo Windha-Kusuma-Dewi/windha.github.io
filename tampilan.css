@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif ;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background: url(img/latar\ belakang.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .box {
+    height: 86vh;
+    width: 75%;
+    padding: 0 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    z-index: 10;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
+    display: flex;
+    backdrop-filter: blur(10px);
+    box-shadow: -15px 17px 17px rgb(10, 10, 10, 0.15);
+    position: sticky;
+}
+
+.container nav{
+    height:  7%;
+    width: 90%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px auto;
+    padding: 20px;
+}
+
+.container .logo{
+    font-size: 32px;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+    margin-left: 30px;
+    font-style: italic;
+}
+
+.container nav ul li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.container nav ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    transition: 0.3s;
+}
+
+.container nav ul li a:hover{
+    color: #673d91;
+}
+
+.content{
+    color: white;
+    text-align: center;
+    margin-top: 200px;
+    align-items: center;
+    padding-left: 50px;
+}
+
+.content .section-1 h1 {
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.content .section-1 h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.content .section-1 p{
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+
+.content .btn{
+   color: white;
+   text-decoration: none;
+   font-weight: bold;
+   font-style: italic;
+}
+
+.content .btn:hover {
+    color: #673d91;
+}
+
+.section-1 {
+    margin-left: 150px;
+}
+
+
+/* buat tampilang about me */
+.content-2 {
+    background-color: rgb(72, 84, 255);
+    height: 100%;
+    color: white;
+    text-align: center;
+}
+
+.content-2 p {
+    font-style: italic;
+}
+
+.foto {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
+
