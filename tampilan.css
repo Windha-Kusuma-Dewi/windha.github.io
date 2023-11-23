@@ -1,24 +1,50 @@
 *{
-    padding: 0;
     margin: 0;
-    box-sizing: border-box;
-    font-family: sans-serif ;
+    font-family: sans-serif;
 }
 
-.container {
-    height: 100vh;
+header {
+    position: fixed;
+    top: 0;
+    z-index: 999;
     width: 100%;
+}
+
+.header a:hover {
+    color: rgb(151, 29, 151);
+}
+
+.header nav ul li {
+    display: inline-block; 
+    padding: 0 30px;
+    font-size: 20px;
+    line-height: 90px;
+    text-align: center;
+}
+
+.header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-style: italic;
+}
+
+
+.container {
     position: relative;
-    background: url(img/latar\ belakang.jpg);
+    background: url(img/background4.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* add */
+    /* width: 100%; */
+    /* height: auto; */
 }
 
 .container .box {
-    height: 86vh;
+    margin-top: 70px;
+    height: 90vh;
     width: 75%;
     padding: 0 20px;
     background-color: rgba(255, 255, 255, 0.1);
@@ -28,43 +54,6 @@
     display: flex;
     backdrop-filter: blur(10px);
     box-shadow: -15px 17px 17px rgb(10, 10, 10, 0.15);
-    position: sticky;
-}
-
-.container nav{
-    height:  7%;
-    width: 90%;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 15px auto;
-    padding: 20px;
-}
-
-.container .logo{
-    font-size: 32px;
-    font-weight: 700;
-    text-decoration: none;
-    color: white;
-    margin-left: 30px;
-    font-style: italic;
-}
-
-.container nav ul li{
-    display: inline-block;
-    padding: 0 20px;
-}
-
-.container nav ul li a{
-    text-decoration: none;
-    font-size: 18px;
-    color: white;
-    transition: 0.3s;
-}
-
-.container nav ul li a:hover{
-    color: #673d91;
 }
 
 .content{
@@ -72,7 +61,11 @@
     text-align: center;
     margin-top: 200px;
     align-items: center;
-    padding-left: 50px;
+    margin-left: 60px;
+}
+
+.content .section-1 {
+    left: 0%;
 }
 
 .content .section-1 h1 {
@@ -102,6 +95,10 @@
     color: #673d91;
 }
 
+.content-3 {
+    margin-right: 300px;
+}
+
 .section-1 {
     margin-left: 150px;
 }
@@ -109,10 +106,11 @@
 
 /* buat tampilang about me */
 .content-2 {
-    background-color: rgb(72, 84, 255);
-    height: 100%;
+    height: 170vh;
     color: white;
     text-align: center;
+    background :url(img/background4.jpg);
+    background-size: cover;
 }
 
 .content-2 p {
@@ -125,3 +123,80 @@
     height: 300px;
 }
 
+
+/* tampilan contact */
+
+.content-3 img {
+    width: 80px;
+    margin-left: 300px;
+    margin-top: 90px;
+}
+
+.content-3 p {
+    color: white;
+    font-style: italic;
+    text-align: center;
+    margin-top: -50px;
+}
+
+.content-3 {
+    margin-left: 250px;
+    margin-top: -70px;
+}
+
+/* membuat footer */
+footer {
+    font-style: italic;
+    font-size: 20px;
+    height: 50px;
+    background-color: rgb(151, 29, 151);
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+/* responsive */
+@media screen and (max-width: 652px) {
+
+    #home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: -200px;
+        margin-top: -3rem;
+    }
+    
+    .content-3 img {
+        margin-top: 70px;
+        margin-left: 50%;
+        /* justify-content: center; */
+    }
+    
+    #contact img {
+        width: 50px;
+    }
+    
+    #contact p {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .foto {
+        margin-top: 30px;
+    }
+
+    .header nav ul li {
+        font-size: 17px;
+    }
+ 
+    .content-3 p {
+        margin-top: 10px;
+        margin-left: 40px;
+        display: flex;
+    } 
+
+}
