@@ -8,6 +8,7 @@ header {
     top: 0;
     z-index: 999;
     width: 100%;
+    /* display: none; */
 }
 
 .header a:hover {
@@ -28,7 +29,6 @@ header {
     font-style: italic;
 }
 
-
 .container {
     position: relative;
     background: url(img/background4.jpg);
@@ -37,9 +37,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* add */
-    /* width: 100%; */
-    /* height: auto; */
+
 }
 
 .container .box {
@@ -198,5 +196,6 @@ footer {
         margin-left: 40px;
         display: flex;
     } 
+
 
 }
